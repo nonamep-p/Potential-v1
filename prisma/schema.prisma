@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Player {
+  id        String   @id @default(cuid())
+  discordId String   @unique
+  username  String
+  level     Int      @default(1)
+  xp        Int      @default(0)
+  gold      Int      @default(100)
+  hp        Int      @default(100)
+  maxHp     Int      @default(100)
+  mp        Int      @default(50)
+  maxMp     Int      @default(50)
+  attack    Int      @default(10)
+  defense   Int      @default(5)
+  speed     Int      @default(5)
+  luck      Int      @default(5)
+  classId   String?
+  guildId   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("players")
+}
+
+model Guild {
+  id          String   @id @default(cuid())
+  name        String   @unique
+  description String?
+  ownerId     String
+  level       Int      @default(1)
+  treasury    Int      @default(0)
+  memberLimit Int      @default(20)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("guilds")
+}
+
+model MarketListing {
+  id        String   @id @default(cuid())
+  sellerId  String
+  itemId    String
+  itemName  String
+  price     Int
+  quantity  Int      @default(1)
+  isAuction Boolean  @default(false)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+}
+
+model DungeonSession {
+  id         String   @id @default(cuid())
+  playerId   String
+  dungeonId  String
+  floor      Int      @default(1)
+  progress   String   @default("{}")
+  isActive   Boolean  @default(true)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model ChatLog {
+  id        String   @id @default(cuid())
+  userId    String
+  message   String
+  response  String
+  createdAt DateTime @default(now())
+}
