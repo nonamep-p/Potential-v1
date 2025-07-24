@@ -1,0 +1,22 @@
+
+[
+  {
+    "id": "goblin_cave",
+    "name": "Goblin Cave",
+    "description": "A dark cave infested with goblins.",
+    "min_level": 1,
+    "max_level": 5,
+    "floors": [
+      {
+        "floor": 1,
+        "monsters": ["goblin"],
+        "treasure": ["health_potion", "leather_armor"]
+      },
+      {
+        "floor": 2,
+        "monsters": ["goblin", "orc"],
+        "treasure": ["iron_sword", "health_potion"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+
+[
+  {
+    "id": "iron_sword",
+    "name": "Iron Sword",
+    "type": "weapon",
+    "subtype": "sword",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "attack": 10,
+      "durability": 100
+    },
+    "price": 50,
+    "description": "A basic iron sword, reliable and sturdy."
+  },
+  {
+    "id": "steel_sword",
+    "name": "Steel Sword",
+    "type": "weapon",
+    "subtype": "sword",
+    "rarity": "uncommon",
+    "level": 5,
+    "stats": {
+      "attack": 20,
+      "durability": 150
+    },
+    "price": 150,
+    "description": "A well-crafted steel sword with improved sharpness."
+  },
+  {
+    "id": "fire_blade",
+    "name": "Fire Blade",
+    "type": "weapon",
+    "subtype": "sword",
+    "rarity": "rare",
+    "level": 10,
+    "stats": {
+      "attack": 35,
+      "fire_damage": 10,
+      "durability": 120
+    },
+    "price": 500,
+    "description": "A magical sword imbued with fire elemental power."
+  }
+]

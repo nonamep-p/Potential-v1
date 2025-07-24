@@ -1,0 +1,22 @@
+
+[
+  {
+    "id": "forest_encounter",
+    "name": "Forest Encounter",
+    "description": "You encounter something in the deep forest...",
+    "type": "random",
+    "outcomes": [
+      {
+        "description": "You find a treasure chest!",
+        "rewards": {
+          "gold": 50,
+          "items": ["health_potion"]
+        }
+      },
+      {
+        "description": "A wild goblin attacks!",
+        "combat": "goblin"
+      }
+    ]
+  }
+]

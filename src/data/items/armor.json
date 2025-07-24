@@ -1,0 +1,31 @@
+
+[
+  {
+    "id": "leather_armor",
+    "name": "Leather Armor",
+    "type": "armor",
+    "subtype": "light",
+    "rarity": "common",
+    "level": 1,
+    "stats": {
+      "defense": 5,
+      "durability": 80
+    },
+    "price": 30,
+    "description": "Basic leather armor providing minimal protection."
+  },
+  {
+    "id": "chain_mail",
+    "name": "Chain Mail",
+    "type": "armor",
+    "subtype": "medium",
+    "rarity": "uncommon",
+    "level": 5,
+    "stats": {
+      "defense": 15,
+      "durability": 120
+    },
+    "price": 120,
+    "description": "Interlocked metal rings forming flexible protection."
+  }
+]

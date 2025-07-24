@@ -1,0 +1,29 @@
+
+[
+  {
+    "id": "health_potion",
+    "name": "Health Potion",
+    "type": "consumable",
+    "subtype": "potion",
+    "rarity": "common",
+    "level": 1,
+    "effects": {
+      "heal": 50
+    },
+    "price": 25,
+    "description": "Restores 50 health points when consumed."
+  },
+  {
+    "id": "mana_potion",
+    "name": "Mana Potion",
+    "type": "consumable",
+    "subtype": "potion",
+    "rarity": "common",
+    "level": 1,
+    "effects": {
+      "restore_mana": 30
+    },
+    "price": 20,
+    "description": "Restores 30 mana points when consumed."
+  }
+]

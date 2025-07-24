@@ -1,0 +1,30 @@
+
+[
+  {
+    "id": "health_ring",
+    "name": "Ring of Health",
+    "type": "accessory",
+    "subtype": "ring",
+    "rarity": "uncommon",
+    "level": 3,
+    "stats": {
+      "max_health": 20
+    },
+    "price": 100,
+    "description": "A ring that increases the wearer's maximum health."
+  },
+  {
+    "id": "mana_amulet",
+    "name": "Mana Amulet",
+    "type": "accessory",
+    "subtype": "necklace",
+    "rarity": "rare",
+    "level": 7,
+    "stats": {
+      "max_mana": 30,
+      "mana_regen": 2
+    },
+    "price": 250,
+    "description": "An amulet that enhances magical abilities."
+  }
+]

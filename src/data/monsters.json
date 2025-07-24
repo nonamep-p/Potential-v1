@@ -1,0 +1,33 @@
+
+[
+  {
+    "id": "goblin",
+    "name": "Goblin",
+    "level": 1,
+    "stats": {
+      "health": 30,
+      "attack": 8,
+      "defense": 2,
+      "agility": 5
+    },
+    "xp_reward": 15,
+    "gold_reward": 10,
+    "loot": ["health_potion"],
+    "description": "A small, green creature with sharp teeth."
+  },
+  {
+    "id": "orc",
+    "name": "Orc",
+    "level": 5,
+    "stats": {
+      "health": 80,
+      "attack": 20,
+      "defense": 8,
+      "agility": 3
+    },
+    "xp_reward": 50,
+    "gold_reward": 35,
+    "loot": ["iron_sword", "health_potion"],
+    "description": "A brutish warrior with incredible strength."
+  }
+]
